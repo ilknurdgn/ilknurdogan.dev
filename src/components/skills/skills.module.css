@@ -1,0 +1,33 @@
+.skills-section {
+  max-width: var(--containerSize);
+  width: 100%;
+  padding: 0 0 100px 0;
+}
+
+.skills-title h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--titleColor);
+  padding-bottom: 25px;
+}
+
+.skills-content {
+  display: flex;
+  gap: 25px;
+}
+
+.skill {
+  height: 60px;
+  width: 60px;
+  border: solid 1px var(--titleColor);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skill img {
+  height: 35px;
+  width: 35px;
+}
