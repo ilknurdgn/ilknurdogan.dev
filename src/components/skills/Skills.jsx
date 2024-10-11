@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./skills.module.css";
 export const Skills = () => {
   return (
-    <div className={styles["skills-section"]}>
+    <div id="skills" className={styles["skills-section"]}>
       <div className={styles["skills-title"]}>
         <h1>SKILLS</h1>
       </div>

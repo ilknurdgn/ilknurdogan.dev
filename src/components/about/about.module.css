@@ -18,27 +18,34 @@
 }
 
 .about-text h1 {
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--titleColor);
   padding-bottom: 5px;
 }
 
+/* .about-text h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--titleColor);
+  padding-bottom: 5px;
+} */
+
 .about-text p {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 400;
   color: var(--textColor);
 }
 
 .about-contact {
   display: flex;
-  gap: 10px;
+  gap: 12px;
 }
 
 .about-contact a {
-  height: 38px;
-  width: 38px;
-  font-size: 22px;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
   color: #fff;
   display: inline-flex;
   align-items: center;

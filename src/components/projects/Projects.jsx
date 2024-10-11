@@ -12,8 +12,8 @@ import { FreeMode, Pagination, Navigation } from "swiper/modules";
 
 export const Projects = () => {
   return (
-    <div className={styles["projects-section"]}>
-      <h1 className={styles["projects-title"]}>PROJECTS</h1>
+    <div id="projects" className={styles["projects-section"]}>
+      <h1 className={styles["projects-title"]}>Projects</h1>
       <Swiper
         slidesPerView={3}
         spaceBetween={20}

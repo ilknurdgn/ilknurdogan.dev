@@ -1,7 +1,7 @@
 .skills-section {
   max-width: var(--containerSize);
   width: 100%;
-  padding: 0 0 100px 0;
+  padding-bottom: 50px;
 }
 
 .skills-title h1 {
@@ -24,6 +24,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--bg);
   box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
 }
 
