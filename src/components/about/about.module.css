@@ -2,6 +2,7 @@
   max-width: var(--containerSize);
   width: 100%;
   height: 100vh;
+  padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
