@@ -1,0 +1,11 @@
+footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 18px;
+  color: var(--textColor);
+}
