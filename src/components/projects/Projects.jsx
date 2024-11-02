@@ -79,7 +79,12 @@ export const Projects = () => {
               <img src={project.image} alt={project.title} />
             </div>
             <div className={styles["project-desc"]}>
-              <a href={project.link} className={styles["project-title"]}>
+              <a
+                href={project.link}
+                className={styles["project-title"]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <h2>{project.title}</h2>
                 <i>
                   <FaExternalLinkAlt />
