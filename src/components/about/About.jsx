@@ -34,7 +34,7 @@ const About = () => {
               I'm <span ref={typedRef}></span>{" "}
             </h1>
             <p>
-              I'm a 3rd year Computer Engineering student at Pamukkale
+              I'm a 4rd year Computer Engineering student at Pamukkale
               University. I continue to improve myself in the field of web
               development, especially focusing on backend technologies.
             </p>
