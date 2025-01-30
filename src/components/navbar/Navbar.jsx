@@ -20,7 +20,7 @@ export const Navbar = () => {
 
         <div className={styles.navContent}>
           <ul className={styles.navList}>
-            <li className={styles.li}>
+            {/* <li className={styles.li}>
               <Link
                 to="about"
                 spy={true}
@@ -30,7 +30,7 @@ export const Navbar = () => {
               >
                 <span>About</span>
               </Link>
-            </li>
+            </li> */}
             {/* <li className={styles.li}>
               <Link
                 to="skills"
@@ -43,7 +43,7 @@ export const Navbar = () => {
               </Link>
             </li> */}
 
-            <li className={styles.li}>
+            {/* <li className={styles.li}>
               <Link
                 to="projects"
                 spy={true}
@@ -53,7 +53,7 @@ export const Navbar = () => {
               >
                 <span>Projects</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
