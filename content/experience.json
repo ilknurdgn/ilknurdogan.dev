@@ -1,0 +1,62 @@
+[
+  {
+    "type": "work",
+    "role": "Junior Backend Engineer",
+    "employment": "Full-time",
+    "org": "Getir",
+    "start": "2025-09",
+    "end": "",
+    "description": "",
+    "highlights": []
+  },
+  {
+    "type": "work",
+    "role": "Junior Software Developer",
+    "employment": "Full-time",
+    "org": "Orion Innovation Turkey",
+    "start": "2025-09",
+    "end": "2025-09",
+    "description": "",
+    "highlights": []
+  },
+  {
+    "type": "work",
+    "role": "Software Developer Intern",
+    "employment": "Internship",
+    "org": "Orion Innovation Turkey",
+    "start": "2025-06",
+    "end": "2025-08",
+    "description": "",
+    "highlights": []
+  },
+  {
+    "type": "work",
+    "role": "Software Developer Intern",
+    "employment": "Internship",
+    "org": "NetKod Bilisim",
+    "start": "2024-07",
+    "end": "2024-08",
+    "description": "",
+    "highlights": []
+  },
+  {
+    "type": "community",
+    "role": "Core Team Member",
+    "employment": "",
+    "org": "PauSiber",
+    "start": "2022",
+    "end": "2025",
+    "description": "",
+    "highlights": []
+  },
+  {
+    "type": "education",
+    "role": "B.Sc. Computer Engineering",
+    "employment": "",
+    "org": "Pamukkale University",
+    "start": "2021",
+    "end": "2025",
+    "description": "",
+    "highlights": []
+  }
+]

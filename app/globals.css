@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+/* Theme is driven by data-theme on <html> (set before paint by the script in layout.tsx). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  color-scheme: light;
+  --bg: #fbfaf8;
+  --card: #f2f0f5;
+  --icon-bg: #ffffff;
+  --ink: #26232e;
+  --muted: #625e6e;
+  --line: #e4e1ea;
+  --accent: #5b4bc4;
+  --on-accent: #ffffff;
+
+  --lavender: #ece8fb;
+  --mint: #e1f3ea;
+  --peach: #fce8dc;
+  --sky: #e2edfb;
+  --butter: #faf1d4;
+
+  /* strong per-pastel colours (app initials) */
+  --lavender-strong: #5b4bc4;
+  --mint-strong: #2e7a57;
+  --peach-strong: #b0512a;
+  --sky-strong: #2f63a8;
+  --butter-strong: #8a6a14;
+
+  /* photo placeholder scene */
+  --lavender-hill: #c9c0f2;
+  --mint-hill: #b5e0ca;
+  --peach-hill: #f4c3a8;
+  --sky-hill: #b7d0f2;
+  --butter-hill: #eed99a;
+  --sun: #ffffff;
+
+  --syntax-keyword: #7a5cc9;
+  --syntax-string: #2e8a63;
+  --syntax-number: #c0622f;
+  --dot-a: #f4c3a8;
+  --dot-b: #eed99a;
+  --dot-c: #b5e0ca;
+}
+
+/* Faint wash of each strong colour over the page bg (opaque, so timeline dots can match it). */
+:root {
+  --lavender-tint: color-mix(in srgb, var(--lavender-strong) 6%, var(--bg));
+  --mint-tint: color-mix(in srgb, var(--mint-strong) 6%, var(--bg));
+  --peach-tint: color-mix(in srgb, var(--peach-strong) 6%, var(--bg));
+  --sky-tint: color-mix(in srgb, var(--sky-strong) 6%, var(--bg));
+  --butter-tint: color-mix(in srgb, var(--butter-strong) 6%, var(--bg));
+}
+
+/* Keep in sync: the no-JS fallback below repeats these values. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #16151c;
+  --card: #211f29;
+  --icon-bg: #2c2a36;
+  --ink: #edebf3;
+  --muted: #a9a5b8;
+  --line: #2f2c3a;
+  --accent: #b9aeff;
+  --on-accent: #1b1530;
+
+  --lavender: #2a2542;
+  --mint: #1d3029;
+  --peach: #382823;
+  --sky: #1e2a3b;
+  --butter: #322e1e;
+
+  --lavender-strong: #b9aeff;
+  --mint-strong: #8fd6b4;
+  --peach-strong: #f4a988;
+  --sky-strong: #8db8f0;
+  --butter-strong: #f2d98a;
+
+  --lavender-hill: #4a4170;
+  --mint-hill: #355848;
+  --peach-hill: #634236;
+  --sky-hill: #344b69;
+  --butter-hill: #58502f;
+  --sun: #6e62a8;
+
+  --syntax-keyword: #c2b6ff;
+  --syntax-string: #8fd6b4;
+  --syntax-number: #f4a988;
+  --dot-a: #634236;
+  --dot-b: #58502f;
+  --dot-c: #355848;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --bg: #16151c;
+    --card: #211f29;
+    --icon-bg: #2c2a36;
+    --ink: #edebf3;
+    --muted: #a9a5b8;
+    --line: #2f2c3a;
+    --accent: #b9aeff;
+    --on-accent: #1b1530;
+    --lavender: #2a2542;
+    --mint: #1d3029;
+    --peach: #382823;
+    --sky: #1e2a3b;
+    --butter: #322e1e;
+    --lavender-strong: #b9aeff;
+    --mint-strong: #8fd6b4;
+    --peach-strong: #f4a988;
+    --sky-strong: #8db8f0;
+    --butter-strong: #f2d98a;
+    --lavender-hill: #4a4170;
+    --mint-hill: #355848;
+    --peach-hill: #634236;
+    --sky-hill: #344b69;
+    --butter-hill: #58502f;
+    --sun: #6e62a8;
+    --syntax-keyword: #c2b6ff;
+    --syntax-string: #8fd6b4;
+    --syntax-number: #f4a988;
+    --dot-a: #634236;
+    --dot-b: #58502f;
+    --dot-c: #355848;
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-jakarta), "Helvetica Neue", sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-icon-bg: var(--icon-bg);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+
+  --color-lavender: var(--lavender);
+  --color-mint: var(--mint);
+  --color-peach: var(--peach);
+  --color-sky: var(--sky);
+  --color-butter: var(--butter);
+  --color-lavender-strong: var(--lavender-strong);
+  --color-mint-strong: var(--mint-strong);
+  --color-peach-strong: var(--peach-strong);
+  --color-sky-strong: var(--sky-strong);
+  --color-butter-strong: var(--butter-strong);
+  --color-lavender-tint: var(--lavender-tint);
+  --color-mint-tint: var(--mint-tint);
+  --color-peach-tint: var(--peach-tint);
+  --color-sky-tint: var(--sky-tint);
+  --color-butter-tint: var(--butter-tint);
+
+  --color-syntax-keyword: var(--syntax-keyword);
+  --color-syntax-string: var(--syntax-string);
+  --color-syntax-number: var(--syntax-number);
+  --color-dot-a: var(--dot-a);
+  --color-dot-b: var(--dot-b);
+  --color-dot-c: var(--dot-c);
+
+  --animate-blink: blink 1.1s steps(1, end) infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Page backdrop: faint dot grid that fades out towards the bottom of the first screen. */
+.bg-dots {
+  background-image: radial-gradient(circle, var(--muted) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+  background-position: center top;
+  opacity: 0.16;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 35%, black 30%, transparent 100%);
+}
+
+/* In the base layer so utilities like outline-none can override it. */
+@layer base {
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
