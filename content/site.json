@@ -1,0 +1,26 @@
+{
+  "name": "Ilknur Dogan",
+  "tabTitle": "Ilknur Dogan",
+  "handle": "ilknurdogan",
+  "role": "Junior Backend Engineer",
+  "location": "",
+  "bio": "Backend Developer focused on building scalable and reliable systems. Interested in distributed systems and event-driven architecture.",
+  "stack": {
+    "languages": ["Java", "TypeScript", "JavaScript", "Go"],
+    "frameworks": ["Spring Boot", "Node.js"],
+    "architecture": ["Microservices", "Distributed Systems", "Event-Driven", "DDD"],
+    "messaging": ["REST", "Kafka"],
+    "databases": ["PostgreSQL", "MongoDB", "SQL Server", "Redis"],
+    "devops": ["Docker", "Kubernetes", "AWS", "ArgoCD", "GitHub Actions", "New Relic"]
+  },
+  "email": "ilknurddogan265@gmail.com",
+  "socials": [
+    { "label": "github", "url": "https://github.com/ilknurdgn" },
+    { "label": "linkedin", "url": "https://www.linkedin.com/in/ilknurdogan/" },
+    { "label": "x", "url": "https://x.com/ddilknurdgn" },
+    { "label": "instagram", "url": "https://www.instagram.com/ilknur.ddogan_/" }
+  ],
+  "contactText": "Have a project in mind or just want to say hi? Drop me a message.",
+  "builtWith": "",
+  "version": ""
+}
